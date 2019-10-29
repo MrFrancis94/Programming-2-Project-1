@@ -71,8 +71,15 @@
 </body>
 </head>
 <body>
-    <h1 class="title">Hello!</h1>
-    <button class="changeColor">Click Here!</button>
+    <h1 onclick="this.innerHTML = 'The text has now changed'">Click on this text!</h1>
+    <p>Click the button below to the time & date!</p>
+
+<button onclick="displayDate()">Click here!</button>
+
 </body>
-<script src="app.js"></script>
+<script src="app.js">
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script>
 </html>
